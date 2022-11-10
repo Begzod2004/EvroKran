@@ -46,11 +46,9 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-    # admin
-    path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
 
-    # local urls
+    # local urls  AboutCompany
     path('account/', include('apps.account.api.urls')),
     path('about-company/', include('apps.about_company.api.urls')),
     path('order/', include('apps.order.api.urls')),
