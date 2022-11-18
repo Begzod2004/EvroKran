@@ -8,15 +8,25 @@ class Category(models.Model):
     title = models.CharField(max_length=50)
     is_active = models.BooleanField(default=True)
 
+    
+    def __str__(self):
+        return self.title
+
+
+class Tonna(models.Model):
+    title = models.CharField(max_length=100)
+    is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
+
+
 
 class Objects(models.Model):
     title = models.CharField(max_length=65)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
     tonna = models.CharField(max_length=50 , default=0)
-    siz = models.CharField(max_length=50, default=0)
+    size = models.FloatField(default=0)
     max_tonna = models.CharField(max_length=50) # Qancha kotara olishi
     lenght_strell = models.CharField(max_length=50) # o'q uzunligi
     speed_car = models.CharField(max_length=50) # mashina tezligi

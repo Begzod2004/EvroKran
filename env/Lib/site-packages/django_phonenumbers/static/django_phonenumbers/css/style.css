@@ -1,0 +1,27 @@
+.country-code{
+    max-width: 100px;
+}
+
+.pn-input{
+    margin: 0px 1px;
+    border: 1px solid #417690;
+    padding: 2px 6px;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.pn-input:focus, .pn-input:hover {
+    border: 1px solid #417690;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(67, 208, 141, 1);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(67, 208, 141, 1);
+    box-shadow: 0px 0px 1px 1px rgba(67, 208, 141, 1);
+
+}
+
+.flag-icon {
+    padding: 5px;
+    margin: 0px 2px;
+}

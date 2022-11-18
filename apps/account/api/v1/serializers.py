@@ -123,3 +123,9 @@ class SetNewPasswordSerializer(serializers.ModelSerializer):
         user.set_password(password)
         user.save()
         return attrs
+
+
+class AccountSerializer(serializers.ModelSerializer):
+    class  Meta:
+        model = Account
+        fields = ( 'id', 'full_name', 'email', 'phone')

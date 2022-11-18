@@ -13,7 +13,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 import json
-from apps.Order.models import Order
+from apps.order.models import Order
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.generics import ListAPIView, CreateAPIView, UpdateAPIView, DestroyAPIView

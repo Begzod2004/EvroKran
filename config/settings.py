@@ -153,7 +153,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz-us'
 
 TIME_ZONE = 'Asia/Tashkent'
 
@@ -239,7 +239,7 @@ JAZZMIN_UI_TWEAKS = {
     "no_navbar_border": False,
     "navbar_fixed": False,
     "layout_boxed": False,
-    "footer_fixed": False,
+    "footer_fixed": True,
     "sidebar_fixed": False,
     "sidebar": "sidebar-dark-navy",
     "sidebar_nav_small_text": False,
@@ -249,7 +249,7 @@ JAZZMIN_UI_TWEAKS = {
     "sidebar_nav_legacy_style": False,
     "sidebar_nav_flat_style": True,
     "theme": "darkly",
-    "dark_mode_theme": None,
+    "dark_mode_theme": "slate",
     "button_classes": {
         "primary": "btn-primary",
         "secondary": "btn-secondary",
@@ -293,7 +293,7 @@ JAZZMIN_SETTINGS = {
     "welcome_sign": "S-orca Companyga xush kelibsiz!",
 
     # Copyright on the footer
-    "copyright": "Library S-orca.uz",
+    "copyright": "S-orca.uz",
 
     # # The model admin to search from the search bar, search bar omitted if excluded
     # "search_model": "myprint.Product",

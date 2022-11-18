@@ -1,5 +1,5 @@
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
+
 
 
 CONTACT_STATUS = (
@@ -14,7 +14,9 @@ class Contact(models.Model):
     title = models.CharField(max_length=65)
     status = models.IntegerField(choices=CONTACT_STATUS, default=0)
     date_create = models.DateTimeField(auto_now_add=True, blank=True)
-    phone_number = PhoneNumberField(null=False, blank=False, unique=True)
+    from_i = models.CharField(max_length=50) 
+    to_i = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length=12)
 
     def str(self):
         return self.title
